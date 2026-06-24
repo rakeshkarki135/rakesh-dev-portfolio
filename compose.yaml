@@ -1,0 +1,22 @@
+services:
+  nextjs-standalone:
+    build:
+      # directory containing the docker file 
+      context: .
+      # docker file name
+      dockerfile: Dockerfile
+
+    # image file
+    image: nextjs-standalone-image
+    # container name
+    container_name: nextjs-standalone-container
+    # location for environment file
+    env_file:
+      - ./.env
+      # portd for local:container
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+
+  
