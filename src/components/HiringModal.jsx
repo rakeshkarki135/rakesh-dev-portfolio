@@ -84,13 +84,13 @@ export const HiringModal = ({ open, setOpenModal }) => {
   return (
     <div
       onClick={() => setOpenModal(false)}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 mx-10 sm:mx-0"
     >
       <div
         onClick={(e) => e.stopPropagation()}
         className="w-sm sm:w-xl bg-surface-container-lowest border-on-secondary-fixed border rounded-xl shadow-inner shadow-primary-container hover:shadow-lg"
       >
-        <div className="m-5 sm:m-10 flex flex-col gap-4 sm:gap-7">
+        <div className="m-5 sm:m-10 flex flex-col gap-3 sm:gap-7">
           <div className="flex flex-col gap-1">
             <label className="text-sm text-gray-400">Name</label>
             <span className="relative">
@@ -105,7 +105,7 @@ export const HiringModal = ({ open, setOpenModal }) => {
                 value={data.name}
                 onChange={handleChange}
                 placeholder="John Doe"
-                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-3 pl-9"
+                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9"
                 required
               />
             </span>
@@ -124,7 +124,7 @@ export const HiringModal = ({ open, setOpenModal }) => {
                 value={data.email}
                 onChange={handleChange}
                 placeholder="johndoe@gmail.com"
-                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-3 pl-9"
+                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9"
                 required
               />
             </span>
@@ -145,7 +145,7 @@ export const HiringModal = ({ open, setOpenModal }) => {
                 value={data.company}
                 onChange={handleChange}
                 placeholder="John Doe"
-                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-3 pl-9"
+                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9"
                 required
               />
             </span>
@@ -162,8 +162,8 @@ export const HiringModal = ({ open, setOpenModal }) => {
               value={data.message}
               onChange={handleChange}
               placeholder="Text Message ..."
-              className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl px-4 p-3"
-              rows={5}
+              className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl px-2 sm:px-4  p-1.5 sm:p-3"
+              rows={4}
             />
           </div>
           <div className="flex flex-col gap-1">

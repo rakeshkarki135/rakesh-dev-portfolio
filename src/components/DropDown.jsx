@@ -35,7 +35,7 @@ const DropDown = ({ selected, setSelected }) => {
   return (
     <div className="relative">
       <button
-        className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 border rounded-xl p-3"
+        className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 border rounded-xl p-1.5 sm:p-3"
         type="button"
         onClick={() => setOpen((prev) => !prev)}
       >
@@ -46,7 +46,7 @@ const DropDown = ({ selected, setSelected }) => {
       </button>
 
       {open && (
-        <div className="w-full text-sm text-gray-500 bg-surface-container-low border-on-primary-fixed border-2  rounded-xl p-3 mt-2 absolute z-50 shadow-primary-container hover:shadow-lg tracking-wide">
+        <div className="w-full text-sm text-gray-500 bg-surface-container-low border-on-primary-fixed border-2 rounded-xl p-1.5 sm:p-3 mt-2 absolute z-50 shadow-primary-container hover:shadow-lg tracking-wide">
           {options.map((option, index) => (
             <p
               key={index}
@@ -54,7 +54,7 @@ const DropDown = ({ selected, setSelected }) => {
                 setSelected(option);
                 setOpen(false);
               }}
-              className="w-full text-sm border-on-primary-fixed not-last:border-b p-2 cursor-pointer hover:text-primary-container tracking-wide"
+              className="w-full text-sm border-on-primary-fixed not-last:border-b p-0.5 sm:p-2 cursor-pointer hover:text-primary-container tracking-wide"
             >
               {option.label}
             </p>
