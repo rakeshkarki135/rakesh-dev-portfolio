@@ -84,11 +84,11 @@ export const HiringModal = ({ open, setOpenModal }) => {
   return (
     <div
       onClick={() => setOpenModal(false)}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
+      className="w-sm sm:w-xl fixed inset-0 z-50 flex items-center justify-center bg-black/50"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-sm sm:w-xl bg-surface-container-lowest border-on-secondary-fixed border rounded-xl shadow-inner shadow-primary-container hover:shadow-lg"
+        className="bg-surface-container-lowest border-on-secondary-fixed border rounded-xl shadow-inner shadow-primary-container hover:shadow-lg"
       >
         <div className="m-7 sm:m-10 flex flex-col gap-6 sm:gap-7">
           <div className="flex flex-col gap-1">
