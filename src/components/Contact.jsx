@@ -155,10 +155,13 @@ const Contact = () => {
 
         {/* for card */}
         <div className="w-sm sm:w-xl bg-surface-container-lowest border-on-secondary-fixed border rounded-xl shadow-inner shadow-primary-container hover:shadow-lg">
-          <div className="m-7 sm:m-10 flex flex-col gap-6 sm:gap-7">
-            <p className="text-xs sm:text-sm text-center font-semibold text-primary-container">
-              {error}
-            </p>
+          <div className="m-7 sm:m-10 flex flex-col gap-5 sm:gap-7">
+            {error && (
+              <p className="text-xs sm:text-sm text-center font-semibold text-primary-container">
+                {error}
+              </p>
+            )}
+
             <div className="flex flex-col gap-1">
               <label className="text-sm text-gray-400">Name</label>
               <span className="relative">
