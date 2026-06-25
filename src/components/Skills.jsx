@@ -32,7 +32,7 @@ import { WiStars } from "react-icons/wi";
 
 const Card = ({ skill }) => {
   return (
-    <div className="w-65 px-6 py-9 sm:px-10 sm:py-13 flex flex-col gap-6 bg-surface-container-lowest rounded-xl border-on-secondary-fixed border shadow-inner shadow-primary-container hover:shadow-lg">
+    <div className="w-65 sm:w-80 px-6 py-9 sm:px-10 sm:py-13 flex flex-col gap-6 bg-surface-container-lowest rounded-xl border-on-secondary-fixed border shadow-inner shadow-primary-container hover:shadow-lg">
       {/* title */}
       <div className="flex gap-4 items-center justify-center">
         {skill.title === "Backend" && (
