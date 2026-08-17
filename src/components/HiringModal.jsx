@@ -84,7 +84,7 @@ export const HiringModal = ({ open, setOpenModal }) => {
   return (
     <div
       onClick={() => setOpenModal(false)}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 mx-10 sm:mx-0"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 sm:bg-black/50 mx-10 sm:mx-0"
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -105,7 +105,7 @@ export const HiringModal = ({ open, setOpenModal }) => {
                 value={data.name}
                 onChange={handleChange}
                 placeholder="John Doe"
-                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9"
+                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9 sm:pl-9"
                 required
               />
             </span>
@@ -124,7 +124,7 @@ export const HiringModal = ({ open, setOpenModal }) => {
                 value={data.email}
                 onChange={handleChange}
                 placeholder="johndoe@gmail.com"
-                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9"
+                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9 sm:pl-9"
                 required
               />
             </span>
@@ -145,7 +145,7 @@ export const HiringModal = ({ open, setOpenModal }) => {
                 value={data.company}
                 onChange={handleChange}
                 placeholder="John Doe"
-                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9"
+                className="w-full text-sm text-gray-500 bg-surface-container-low border-gray-800 outline-on-secondary-fixed focus:outline-3 border rounded-xl p-1.5 sm:p-3 pl-9 sm:pl-9"
                 required
               />
             </span>
